@@ -1,0 +1,68 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1;
+  padding-top: 80px;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+  color: #0f4761;
+  border-left: 6px solid #0f4761;
+  padding-left: 10px;
+}
+
+.highlight {
+  color: #d35400;
+  font-weight: bold;
+}
+
+.cost {
+  font-weight: bold;
+  color: #467886;
+  margin-top: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.gif, img {
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+pre {
+  background: #222;
+  color: #0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+}

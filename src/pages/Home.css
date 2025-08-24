@@ -1,0 +1,170 @@
+.hero-header {
+  background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  text-align: center;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.hero-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.hero-header h1 {
+  font-size: 3rem;
+  background: rgba(0,0,0,0.4);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+}
+
+.day-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.day-card:hover {
+  transform: scale(1.02);
+}
+
+.day-card p {
+  font-size: 1.05rem;
+  margin: 0.8rem 0;
+  line-height: 1.7;
+}
+
+.code-block {
+  background: #222;
+  color: #0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.activity-image {
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.activity-image:hover {
+  transform: scale(1.05);
+}
+
+.final-message {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #0f4761;
+  color: white;
+  margin-top: 3rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.footer h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  border: none;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-header {
+    height: 40vh;
+  }
+  
+  .hero-header h1 {
+    font-size: 2.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .day-card {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .day-card p {
+    font-size: 0.95rem;
+  }
+  
+  .code-block {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  
+  .footer {
+    padding: 2rem 1rem;
+  }
+  
+  .footer h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-header {
+    height: 30vh;
+    padding: 0 0.5rem;
+  }
+  
+  .hero-header h1 {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .day-card {
+    padding: 1rem;
+    margin: 1.2rem 0;
+  }
+  
+  .day-card p {
+    font-size: 0.85rem;
+  }
+  
+  .footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer h2 {
+    font-size: 1.3rem;
+  }
+}
