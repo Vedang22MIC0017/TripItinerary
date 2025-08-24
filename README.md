@@ -252,4 +252,12 @@ Your TripBuddy app is now ready to help you:
 - ☁️ Store important documents safely
 - 🏠 Keep everything organized in one place
 
+## 🚀 Live Demo
+
+Visit the live application: [trip-itinerary-alpha.vercel.app](https://trip-itinerary-alpha.vercel.app)
+
+## 📁 Repository
+
+GitHub: [https://github.com/Vedang22MIC0017/TripItinerary](https://github.com/Vedang22MIC0017/TripItinerary)
+
 Happy travels! 🏔️✨
