@@ -14,6 +14,15 @@ export default defineSchema({
     createdAt: v.number(),
   }),
 
+  payments: defineTable({
+    from: v.string(),
+    to: v.string(),
+    amount: v.number(),
+    description: v.optional(v.string()),
+    date: v.string(),
+    createdAt: v.number(),
+  }),
+
   documents: defineTable({
     name: v.string(),
     type: v.string(),

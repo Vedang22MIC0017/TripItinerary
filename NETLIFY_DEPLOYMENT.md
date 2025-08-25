@@ -3,6 +3,7 @@
 ## 📋 Prerequisites
 
 Before deploying, ensure you have:
+
 - ✅ Your TripBuddy app pushed to GitHub
 - ✅ A Netlify account (free)
 - ✅ Your Convex deployment URL
@@ -34,6 +35,7 @@ Before deploying, ensure you have:
 3. **Base Directory**: Leave empty (unless your React app is in a subdirectory)
 
 Your settings should look like this:
+
 ```
 Build command: npm run build
 Publish directory: build
@@ -54,6 +56,7 @@ REACT_APP_CONVEX_URL=https://hushed-capybara-128.convex.cloud
 ```
 
 **To get your Convex URL:**
+
 1. Check your `.env.local` file in your project
 2. Or run `npx convex dev` and copy the URL from the output
 3. Or check your Convex dashboard at [dashboard.convex.dev](https://dashboard.convex.dev)
@@ -81,6 +84,7 @@ REACT_APP_GOOGLE_API_KEY=your_google_api_key
 ### Step 6: Access Your Live Site
 
 1. **Default URL**: Netlify will give you a random URL like:
+
    ```
    https://amazing-name-123456.netlify.app
    ```
@@ -98,7 +102,8 @@ REACT_APP_GOOGLE_API_KEY=your_google_api_key
 
 ### Issue 2: Environment Variables Not Working
 
-**Solution**: 
+**Solution**:
+
 1. Go to **Site settings** > **Environment variables**
 2. Add your variables again
 3. Redeploy the site
@@ -106,6 +111,7 @@ REACT_APP_GOOGLE_API_KEY=your_google_api_key
 ### Issue 3: Convex Connection Error
 
 **Solution**:
+
 1. Verify your `REACT_APP_CONVEX_URL` is correct
 2. Ensure your Convex deployment is running
 3. Check the Convex dashboard for any errors
@@ -143,6 +149,7 @@ Netlify automatically provides SSL certificates for all sites.
 ### Automatic Deployments
 
 Netlify will automatically:
+
 - ✅ Deploy when you push to `main` branch
 - ✅ Create preview deployments for pull requests
 - ✅ Rollback to previous versions if needed
@@ -150,6 +157,7 @@ Netlify will automatically:
 ### Manual Deployments
 
 To manually trigger a deployment:
+
 1. Go to your site dashboard
 2. Click **"Trigger deploy"** > **"Deploy site"**
 
