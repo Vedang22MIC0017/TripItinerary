@@ -11,7 +11,6 @@ import vedangAvatar from '../assests/vedang.png';
 import pranshuAvatar from '../assests/pranshu.png';
 import eshanshAvatar from '../assests/eshanch.png';
 import shahadAvatar from '../assests/shahad.png';
-import atharvAvatar from '../assests/atharv.png';
 import vijayAvatar from '../assests/vijay.png';
 import aryaAvatar from '../assests/arya.png';
 import sharvariAvatar from '../assests/sharvari.png';
@@ -28,7 +27,7 @@ const ExpenseSplitter = () => {
   const addPaymentMutation = useMutation(api.expenses.addPayment);
   const deletePaymentMutation = useMutation(api.expenses.deletePayment);
 
-  const [friends] = useState(["Vijay", "Arya","Sharvari", "Vedang", "Pranshu", "Eshansh", "Atharv" , "Shahad", "Rithanya","AVK"]);
+  const [friends] = useState(["Vijay", "Arya","Sharvari", "Vedang", "Pranshu", "Eshansh", "Shahad", "Rithanya","AVK"]);
   const [showAddExpense, setShowAddExpense] = useState(false);
   const [showAddPayment, setShowAddPayment] = useState(false);
   const [selectedPerson, setSelectedPerson] = useState("Vedang");
@@ -53,7 +52,6 @@ const ExpenseSplitter = () => {
     "Pranshu": pranshuAvatar,
     "Eshansh": eshanshAvatar,
     "Shahad": shahadAvatar,
-    "Atharv": atharvAvatar,
     "Vijay": vijayAvatar,
     "Arya": aryaAvatar,
     "Sharvari":sharvariAvatar,
