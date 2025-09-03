@@ -9,11 +9,14 @@ import './ExpenseSplitter.css';
 // Import person avatars
 import vedangAvatar from '../assests/vedang.png';
 import pranshuAvatar from '../assests/pranshu.png';
-import eshanchAvatar from '../assests/eshanch.png';
+import eshanshAvatar from '../assests/eshanch.png';
 import shahadAvatar from '../assests/shahad.png';
 import atharvAvatar from '../assests/atharv.png';
 import vijayAvatar from '../assests/vijay.png';
 import aryaAvatar from '../assests/arya.png';
+import sharvariAvatar from '../assests/sharvari.png';
+import rithAvatar from '../assests/rithanya.png';
+import avkAvatar from '../assests/avk.png';
 
 const ExpenseSplitter = () => {
   // Convex queries and mutations
@@ -25,7 +28,7 @@ const ExpenseSplitter = () => {
   const addPaymentMutation = useMutation(api.expenses.addPayment);
   const deletePaymentMutation = useMutation(api.expenses.deletePayment);
 
-  const [friends] = useState(["Vijay", "Arya", "Vedang", "Paranshu", "Eshanch", "Shahad", "Rithanya", "Athrav"]);
+  const [friends] = useState(["Vijay", "Arya","Sharvari", "Vedang", "Pranshu", "Eshansh", "Atharv" , "Shahad", "Rithanya","AVK"]);
   const [showAddExpense, setShowAddExpense] = useState(false);
   const [showAddPayment, setShowAddPayment] = useState(false);
   const [selectedPerson, setSelectedPerson] = useState("Vedang");
@@ -47,13 +50,16 @@ const ExpenseSplitter = () => {
   // Avatar mapping
   const personAvatars = {
     "Vedang": vedangAvatar,
-    "Paranshu": pranshuAvatar,
-    "Eshanch": eshanchAvatar,
+    "Pranshu": pranshuAvatar,
+    "Eshansh": eshanshAvatar,
     "Shahad": shahadAvatar,
-    "Athrav": atharvAvatar,
+    "Atharv": atharvAvatar,
     "Vijay": vijayAvatar,
     "Arya": aryaAvatar,
-    "Rithanya": "https://via.placeholder.com/40x40/6c757d/ffffff?text=R" // Placeholder for missing avatar
+    "Sharvari":sharvariAvatar,
+    "Rithanya": rithAvatar,
+    "AVK": avkAvatar
+    
   };
 
   const getPersonAvatar = (personName) => {
